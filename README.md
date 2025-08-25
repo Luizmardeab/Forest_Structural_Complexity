@@ -47,6 +47,11 @@ These findings suggest that FSC is more linked to biomass and productivity than 
 **- 2_plot_level_comp_metrics.R**\
   Calculation of LiDAR-derived Forest Structural Complexity (FSC) indices at plot level\
 **- 3_comp_met_analysis.R**\
-  Random forest analysis of field-measured old-growth structures vc LiDAR FSC indices\
+  Random forest analysis of field-measured old-growth structures vs LiDAR FSC indices\
 **- 4_Anova_analysis_Full.R**\
   Comparison of stand age groups, Maturity clusters, and Productivity vs FSC
+
+# Data Summaries:
+**data_Full.csv**: Field and LiDAR metrics unfiltered\
+**data_75.csv**: Field and LiDAR metrics filtered with a voxel size of 0.4 m, resulting in a drop of 25% on the point cloud density\
+**data_50.csv**: Field and LiDAR metrics filtered with a voxel size of 0.75 m, resulting in a drop of 50% on the point cloud density
