@@ -27,12 +27,7 @@ These findings suggest that FSC is more linked to biomass and productivity than 
 ---
 
 ## Index Terms
-
-- Forest structural complexity
-- Canopy Rugosity
-- Old-growth forests
-- LiDAR indices
-- Site productivity
+Forest structural complexity; Canopy Rugosity; Old-growth forests; LiDAR indices; Site productivity
 
 ---
 
