@@ -1,7 +1,7 @@
 # LIDAR-BASED FOREST STRUCTURAL COMPLEXITY INDICES ARE NOT PROXIES FOR OLD-GROWTH FORESTS
 
 **Authors:**\
-Luizmar de Assis Barros{a}, Karen Price{b}, Camile Sothe{c}, Xavier Llano{a}, Juan Pablo Ramírez-Delgado{a}, Alemu Gonsamo{d}, Chris Johnson{a}, Michelle Venter{a}, Oscar Venter{a}
+Luizmar de Assis Barros<sup>a</sup>, Karen Price<sup>b</sup>, Camile Sothe<sup>c</sup>, Xavier Llano<sup>a</sup>, Juan Pablo Ramírez-Delgado<sup>a</sup>, Alemu Gonsamo<sup>d</sup>, Chris Johnson<sup>a</sup>, Michelle Venter<sup>a</sup>, Oscar Venter<sup>a</sup>
 
 a *University of Northern British Columbia, 3333 University Way, Prince George, V2N 4Z9, British Columbia, Canada*\
 b *Independent Researcher, 1355 Malkow Road, Smithers, BC V0J 2N7, Canada*\
@@ -36,16 +36,17 @@ These findings suggest that FSC is more linked to biomass and productivity than 
 
 ---
 
-## Image
+## Main Result
 
 ![Forest Structural Complexity](image.jpeg)
+**Figure 1** Scatter plot of FSC vs a) log transformed stand age and b) forest maturity index (IMAT). 
 
 # R Scripts Description:
-- 1_BC_tree_data.R
-  Pre-processing of British Columbia tree-level field inventory data and calculation of old-growth structural attributes
-- 2_plot_level_comp_metrics.R
-  Calculation of LiDAR-derived Forest Structural Complexity (FSC) indices at plot level
-- 3_comp_met_analysis.R
-  Random forest analysis of field-measured old-growth structures vc LiDAR FSC indices
-- 4_Anova_analysis_Full.R
+**- 1_BC_tree_data.R**\
+  Pre-processing of British Columbia tree-level field inventory data and calculation of old-growth structural attributes\
+**- 2_plot_level_comp_metrics.R**\
+  Calculation of LiDAR-derived Forest Structural Complexity (FSC) indices at plot level\
+**- 3_comp_met_analysis.R**\
+  Random forest analysis of field-measured old-growth structures vc LiDAR FSC indices\
+**- 4_Anova_analysis_Full.R**\
   Comparison of stand age groups, Maturity clusters, and Productivity vs FSC
