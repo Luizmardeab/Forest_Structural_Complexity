@@ -38,7 +38,7 @@ These findings suggest that FSC is more linked to biomass and productivity than 
 
 ## Image
 
-![Forest Structural Complexity](image.png)
+![Forest Structural Complexity](image.jpeg)
 
 # R Scripts Description:
 - 1_BC_tree_data.R
