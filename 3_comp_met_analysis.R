@@ -308,13 +308,13 @@ data<- data %>% filter(si!=0)
 data <- data %>%
   mutate(
     Stand_Age = case_when(
-      Age <= 70 ~ "<70yrs", 
-      Age > 70 & Age <= 140 ~ "70 - 140yrs", 
+      Age <= 80 ~ "<80yrs", 
+      Age > 80 & Age <= 140 ~ "80 - 140yrs", 
       Age > 140 & Age < 250 ~ "140 - 250yrs",
       Age >= 250 ~ ">250yrs"
     ),
     Stand_Age = fct_relevel(
-      Stand_Age, "<70yrs", "70 - 140yrs", "140 - 250yrs", ">250yrs"
+      Stand_Age, "<80yrs", "80 - 140yrs", "140 - 250yrs", ">250yrs"
     )
   )
 
@@ -337,8 +337,8 @@ data <- data %>%
   mutate(
     Age_Productivity = fct_relevel(
       Age_Productivity,
-      "Low-Prod_<70yrs", "High-Prod_<70yrs",
-      "Low-Prod_70 - 140yrs", "High-Prod_70 - 140yrs",
+      "Low-Prod_<80yrs", "High-Prod_<80yrs",
+      "Low-Prod_80 - 140yrs", "High-Prod_80 - 140yrs",
       "Low-Prod_140 - 250yrs", "High-Prod_140 - 250yrs",
       "Low-Prod_>250yrs", "High-Prod_>250yrs"
     )
@@ -349,7 +349,7 @@ data<-data%>%
   mutate(
     Old_prod = if_else(Age>=250,Age_Productivity,Stand_Age)
   )%>%mutate(Old_prod=fct_relevel(
-    Old_prod, "<70yrs", "70 - 140yrs", "140 - 250yrs",
+    Old_prod, "<80yrs", "80 - 140yrs", "140 - 250yrs",
     "Low-Prod_>250yrs", "High-Prod_>250yrs"
   ))
 
