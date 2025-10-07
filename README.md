@@ -22,7 +22,7 @@ Forest structural complexity; Canopy Rugosity; Old-growth forests; LiDAR indices
 
 ## Main Result
 
-![Forest Structural Complexity](image.jpeg)
+![Forest Structural Complexity](Age_IMAT.jpeg)
 **Figure 1** Scatter plot of FSC vs a) log transformed stand age and b) forest maturity index (IMAT). 
 
 # R Scripts Description:
