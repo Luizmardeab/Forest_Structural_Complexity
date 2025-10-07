@@ -76,7 +76,7 @@ data_all = data_all%>%
     Productivity=="Low-Prod"~"Low",
     Productivity=="High-Prod"~"High"))%>%
   mutate(
-  Stand_Age = fct_relevel(Stand_Age, "<70yrs", "70 - 140yrs", "140 - 250yrs", ">250yrs"),
+  Stand_Age = fct_relevel(Stand_Age, "<80yrs", "80 - 140yrs", "140 - 250yrs", ">250yrs"),
   Productivity = fct_relevel(Productivity,"Low", "High"),
   ogi_cluster=fct_relevel(ogi_cluster,"Low", "Moderate", "High","Very-high")
 )
@@ -272,7 +272,7 @@ cld_stand <- cld(em_stand, Letters = letters)  # Add letters for significance
 cld_stand <- cld_stand %>%
   mutate(
     Stand_Age = factor(Stand_Age, 
-                       levels = c("<70yrs", "70 - 140yrs", "140 - 250yrs", ">250yrs")),
+                       levels = c("<80yrs", "80 - 140yrs", "140 - 250yrs", ">250yrs")),
     Productivity = factor(Productivity, 
                           levels = c("Low", "High"))
   ) %>% 
@@ -313,7 +313,7 @@ cld_stand <- cld(em_stand, Letters = letters)  # Add letters for significance
 cld_stand <- cld_stand %>%
   mutate(
     Stand_Age = factor(Stand_Age, 
-                       levels = c("<70yrs", "70 - 140yrs", "140 - 250yrs", ">250yrs"))
+                       levels = c("<80yrs", "80 - 140yrs", "140 - 250yrs", ">250yrs"))
   ) %>% 
   arrange(Stand_Age)
 # 2. Get ggeffect predictions
