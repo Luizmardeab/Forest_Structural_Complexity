@@ -1,4 +1,4 @@
-# “OLD-GROWTH” IS NOT ALWAYS COMPLEX: ASSESSING LIDAR-DERIVED FOREST STRUCTURAL COMPLEXITY ACROSS SUCCESSIONAL STAGES ON VANCOUVER ISLAND
+# ASSESSING LIDAR-DERIVED FOREST STRUCTURAL COMPLEXITY ACROSS OLD-GROWTH STRUCTURES AND SUCCESSIONAL STAGES ON VANCOUVER ISLAND
 
 **Authors:**\
 Luizmar de Assis Barros<sup>a</sup>, Karen Price<sup>b</sup>, Camile Sothe<sup>c</sup>, Chris Johnson<sup>a</sup>, Juan Pablo Ramírez-Delgado<sup>a</sup>, Xavier Llano<sup>a</sup>, Michelle Venter<sup>a</sup>, Oscar Venter<sup>a</sup>
