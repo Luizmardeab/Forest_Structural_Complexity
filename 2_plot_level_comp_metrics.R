@@ -46,10 +46,7 @@ filtplots <- fplots#[!duplicates, ]
 radius<-15 #11, #25 # Tested a couple of plot radious based on their distribution, 15 m worked the best
 
 # # Apply the function to the catalog
-# # Set the number of cores for parallel processing
-# Read the LAS catalog with a filter to keep only ground returns (classification == 2)
 path<-paste0(getwd(),'/Norm_tile/')
-# path<-'G:/Conservation Solution Lab/People/Luizmar/PhD_Luizmar/Norm_tile_23_09_24/'
 
 ctg <- readLAScatalog(path, filter = " -drop_class 7 -drop_z_below 0.5 -drop_withheld -drop_z_above 100 -drop_point_redundant")
 #
@@ -342,7 +339,6 @@ HeightMetrics = function(Z){
 
 #Plot metrics
 set_lidr_threads(10)
-plan(multisession, workers = 3)
 res=5
 radius = 15
 
