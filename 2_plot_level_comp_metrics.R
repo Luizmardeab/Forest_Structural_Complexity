@@ -43,12 +43,12 @@ filtplots <- fplots#[!duplicates, ]
 
 # testplot<-fplots[c(1:15),]  #For testing the LiDAR Functions
 
-radius<-15 #11, #25 # Tested a couple of plot radious based on their distribution, 15 m worked the best
+radius<-15 #11, #25 # Tested a couple of plot radious based on their distribution, values from 15 m radious had the best alignment between field and LiDAR
 
 # # Apply the function to the catalog
 path<-paste0(getwd(),'/Norm_tile/')
 
-ctg <- readLAScatalog(path, filter = " -drop_class 7 -drop_z_below 0.5 -drop_withheld -drop_z_above 100 -drop_point_redundant")
+ctg <- readLAScatalog(path, filter =  "-drop_class 2 -drop_class 7 -drop_withheld -drop_z_above 100 -drop_point_redundant")
 #
 # # Set various options for the catalog processing
 opt_output_files(ctg) <- ""
